@@ -1,7 +1,7 @@
 #! /bin/bash
 
 name="agentx-server-1.3.0"
-downloadUrl="http://zhangjiupeng.com/agentx/${name}.tar.gz"
+downloadUrl="https://zhangjiupeng.com/agentx/${name}.tar.gz"
 basePath="/usr/local/agentx/"
 
 clear
@@ -27,7 +27,7 @@ echo "Redirect to ${basePath}"
 cd ${basePath}
 
 echo "Downloading..."
-wget -q ${downloadUrl}
+wget -q --no-check-certificate ${downloadUrl}
 
 echo "Extracting files..."
 tar -xvf ${name}.tar.gz
