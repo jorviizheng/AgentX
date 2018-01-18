@@ -27,7 +27,7 @@ echo "Redirect to ${basePath}"
 cd ${basePath}
 
 echo "Downloading..."
-wget -q --no-check-certificate ${downloadUrl}
+wget --no-check-certificate ${downloadUrl}
 
 echo "Extracting files..."
 tar -xvf ${name}.tar.gz
